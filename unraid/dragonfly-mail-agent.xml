@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dragonfly-mail-agent</Name>
+  <Repository>ghcr.io/mbainter/docker-dma:latest</Repository>
+  <Registry>https://github.com/mbainter/docker-dma/pkgs/container/docker-dma</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/mbainter/docker-dma/refs/heads/main/unraid/dragonfly-mail-agent.xml</TemplateURL>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Spool" Target="/var/spool/dma" Default="/mnt/user/appdata/draonfly-mail-agent/spool" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/etc/dma" Default="/mnt/user/appdata/dragonfly-mail-agent/config" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="SMTP Port" Target="25" Default="25" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"/>
+</Container>
